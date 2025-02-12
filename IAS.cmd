@@ -45,6 +45,7 @@ for %%# in (%*) do (
 if /i "%%#"=="r1" set r1=1
 if /i "%%#"=="r2" set r2=1
 )
+
 if exist %SystemRoot%\Sysnative\cmd.exe if not defined r1 (
 setlocal EnableDelayedExpansion
 start %SystemRoot%\Sysnative\cmd.exe /c ""!_cmdf!" %* r1"
